@@ -104,6 +104,7 @@ public class Tetris extends Application {
 
 	private void moveOnKeyPress(Form form) {
 		scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+			@SuppressWarnings("incomplete-switch")
 			@Override
 			public void handle(KeyEvent event) {
 				switch (event.getCode()) {
